@@ -16,7 +16,6 @@ Grid layout permite alinhar os componentes da página fazendo uso de linhas e co
     - grid-column-gap
 - grid-template-areas
 
----
 #### Item(s)
 
 - grid-column
@@ -28,6 +27,7 @@ Grid layout permite alinhar os componentes da página fazendo uso de linhas e co
 - grid-area
 
 
+---
 
 ### PROPRIEDADES FLEXBOX
 
