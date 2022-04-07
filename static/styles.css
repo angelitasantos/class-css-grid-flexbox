@@ -1,12 +1,11 @@
-/* CSS Grid Layout e FlexBox */
-
-/* CSS Geral */
-
-body{
+body {
     background: rgba(0, 255, 255, 0.1);
 }
 
-body, ul, li, p{
+body,
+ul,
+li,
+p {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -14,25 +13,30 @@ body, ul, li, p{
     font-size: medium;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-a:hover{
-    color: black;
+a:hover {
+    color: rgba(2, 53, 53, 0.8);
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px;
     text-align: center;
 }
 
-p{
+p {
     text-align: justify;
 }
 
-header{
+header {
     background: rgba(2, 53, 53, 0.8);
     display: flex;
     flex-wrap: wrap;
@@ -41,15 +45,30 @@ header{
     padding: 20px;
 }
 
-footer{
+footer {
+    min-height: 100px;
     background: rgba(2, 53, 53, 0.8);
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
     padding: 20px;
 }
 
-.menu{
+.content {
+    width: calc(100% - 200px);
+    margin: 0 180px;
+}
+
+.home {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.menu {
     display: flex;
 }
 
@@ -58,39 +77,35 @@ footer{
     padding: 10px;
 }
 
-/* Flexbox */
-
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
-.container h2{
+.container h2 {
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-.container p{
+.container p {
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: center;
 }
 
-.grid-flex{
+.grid-flex {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.grid-flex > div{
+.grid-flex>div {
     flex: 1 1 200px;
     margin: 1%;
 }
 
-/* Grid Cards */
-
-.grid-layout{
+.grid-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -98,42 +113,41 @@ img{
     margin: 0 auto;
 }
 
-.grid-layout > div:nth-child(n + 4){
+.grid-layout>div:nth-child(n + 4) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     align-items: center;
 }
 
-.grid-layout > div.anuncio{
+.grid-layout>div.anuncio {
     grid-column: 1;
     grid-row: 2 / 5;
     display: block;
 }
 
-/* Breakpoint */
 
 @media (max-width: 420px) {
-    header{
+    header {
         justify-content: center;
     }
 }
 
 @media (max-width: 600px) {
-    .grid-layout{
+    .grid-layout {
         grid-template-columns: 1fr 1fr;
         margin-left: 1%;
         margin-right: 1%;
     }
 
-    .grid-layout > div:nth-child(n + 4){
+    .grid-layout>div:nth-child(n + 4) {
         display: block;
     }
 
-    .grid-layout > div.anuncio{
+    .grid-layout>div.anuncio {
         grid-column: auto;
         grid-row: auto;
         order: -1;
     }
-    
+
 }
