@@ -1,126 +1,35 @@
-<!doctype html>
-<html lang="pt-br">
+{% extends 'base.html' %}
+{% block container %}
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CSS Grid e Flexbox</title>
-    <link rel="icon" href="/static/img/logo.png">
-    <link rel="stylesheet" type="text/css" href="/static/styles.css">
-</head>
+<h1>Home</h1>
+<div class="content">
 
-<body>
+    <div class="home">
+        <div class="grid-layout">
+            <h2>PROPRIEDADES GRID LAYOUT</h2>
+            <ul>
+                <li>display: grid</li>
+                <li>grid-template-columns</li>
+                <li>grid-template-rows</li>
+                <li>grid-gap</li>
+                <li>grid-row-gap</li>
+                <li>grid-column-gap</li>
+                <li>grid-template-areas</li>
+            </ul>
+        </div>
 
-    <header>
-        <a href="#">
-            <h1>CSS</h1>
-        </a>
-        <ul class="menu">
-            <li><a href="#gridlayout">Grid Layout</a></li>
-            <li><a href="#flexbox">Flexbox</a></li>
-            <li><a href="https://getbootstrap.com.br/" target="_blank">Bootstrap</a></li>
-        </ul>
-    </header>
-
-    <h1>Container</h1>
-
-    <div class="container">
-
-        <h2 id="flexbox">Flexbox</h2>
-
-        <section class="grid-flex">
-            <div>
-                <img src="/static/img/image1.jpeg">
-                <p>Flexbox 1</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image2.jpeg">
-                <p>Flexbox 2</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image3.jpeg">
-                <p>Flexbox 3</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image3.jpeg">
-                <p>Flexbox 4</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image1.jpeg">
-                <p>Flexbox 5</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image2.jpeg">
-                <p>Flexbox 6</p>
-            </div>
-        </section>
-
-        <h2 id="gridlayout">Grid Layout</h2>
-
-        <section class="grid-layout">
-            <div>
-                <img src="/static/img/image2.jpeg">
-                <p>Legenda 1</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image3.jpeg">
-                <p>Legenda 2</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image1.jpeg">
-                <p>Legenda 3</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image1.jpeg">
-                <p>Card 1</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image2.jpeg">
-                <p>Card 2</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image3.jpeg">
-                <p>Card 3</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image1.jpeg">
-                <p>Card 4</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image2.jpeg">
-                <p>Card 5</p>
-            </div>
-
-            <div>
-                <img src="/static/img/image3.jpeg">
-                <p>Card 6</p>
-            </div>
-
-            <div class="anuncio">
-                <img src="/static/img/image3.jpeg">
-                <p>Anúncio</p>
-            </div>
-
-        </section>
+        <div class="grid-layout">
+            <h2>PROPRIEDADES FLEXBOX</h2>
+            <ul>
+                <li>display: flex</li>
+                <li>flex-direction</li>
+                <li>flex-wrap</li>
+                <li>justify-content</li>
+                <li>align-items</li>
+            </ul>
+        </div>
 
     </div>
+</div>
 
-    <footer>
-        <h3>Layout Origamid</h3>
-    </footer>
-
-</body>
-
-</html>
+{% endblock %}

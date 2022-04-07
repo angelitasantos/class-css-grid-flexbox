@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Python with Flask{% endblock %}</title>
+    <link rel="icon" href="/static/img/logo.png">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="/">
+            <h1>CSS</h1>
+        </a>
+        <ul class="menu">
+            <li><a href="gridlayout">Grid Layout</a></li>
+            <li><a href="flexbox">Flexbox</a></li>
+            <li><a href="https://getbootstrap.com.br/" target="_blank">Bootstrap</a></li>
+        </ul>
+    </header>
+
+    {% block container %}
+    {% endblock %}
+
+    <div class="container">
+
+        {% block flexbox %}
+        {% endblock %}
+
+        {% block gridlayout %}
+        {% endblock %}
+
+    </div>
+
+    <footer>
+        <h3>Layout Origamid</h3>
+    </footer>
+
+</body>
+
+</html>
