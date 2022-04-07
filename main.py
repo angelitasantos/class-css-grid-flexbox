@@ -8,7 +8,7 @@ def not_found(e):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('grid_layout.html')
 
 @app.route('/gridlayout')
 def grid_layout():

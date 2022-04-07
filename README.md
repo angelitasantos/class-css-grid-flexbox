@@ -1,6 +1,12 @@
-## PROPRIEDADES GRID LAYOUT
+## Site criado com Python / Flask
 
-### Container
+
+### PROPRIEDADES GRID LAYOUT
+
+Grid layout permite alinhar os componentes da página fazendo uso de linhas e colunas 
+[W3Schools](https://www.w3schools.com/css/css_grid.asp)
+
+#### Container
 
 - display: grid;
 - grid-template-columns
@@ -11,7 +17,7 @@
 - grid-template-areas
 
 ---
-### Item(s)
+#### Item(s)
 
 - grid-column
     - grid-column-start
@@ -23,9 +29,12 @@
 
 
 
-## PROPRIEDADES FLEXBOX
+### PROPRIEDADES FLEXBOX
 
-### Content
+No flexbox, as operações realizadas relacionam-se a dois eixos: o eixo principal e o eixo transversal.
+[W3Schools](https://www.w3schools.com/css/css3_flexbox.asp)
+
+#### Content
 
 - display: flex;
 - flex-direction: 
